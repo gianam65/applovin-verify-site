@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snowline Supply — Snowboards &amp; Winter Gear</title>
+<meta name="description" content="Snowline Supply sells snowboards, bindings and winter accessories online.">
+
+<!-- ============================================================
+     AppLovin (Axon) Pixel
+     Replace YOUR_EVENT_KEY_HERE with the Event Key from
+     AppLovin Dashboard -> Account -> General -> Keys
+     ============================================================ -->
+<script>
+(function () {
+  var AXON_EVENT_KEY = "YOUR_EVENT_KEY_HERE";
+  if (AXON_EVENT_KEY === "YOUR_EVENT" + "_KEY_HERE") {
+    console.warn("AppLovin pixel: Event Key not set yet.");
+    return;
+  }
+  !function(e,r){var t=["https://s.axon.ai/pixel.js"];if(!e.axon){var a=e.axon=function(){a.performOperation?a.performOperation.apply(a,arguments):a.operationQueue.push(arguments)};a.operationQueue=[],a.ts=Date.now(),a.eventKey=AXON_EVENT_KEY;for(var n=r.getElementsByTagName("script")[0],o=0;o<t.length;o++){var i=r.createElement("script");i.async=!0,i.src=t[o],n.parentNode.insertBefore(i,n)}}}(window,document);
+  axon("init");
+  axon("track", "page_view");
+})();
+</script>
+
+<style>
+  :root{--ink:#14181f;--muted:#5b6471;--line:#e4e8ee;--bg:#fff;--accent:#1b4dff}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font-weight:700;letter-spacing:-.02em}
+  nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:15px}
+  nav a:hover{color:var(--ink)}
+  .hero{padding:64px 0 48px}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 14px;letter-spacing:-.03em}
+  .hero p{color:var(--muted);max-width:52ch;margin:0 0 24px;font-size:18px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:8px 0 56px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0 0 10px;color:var(--muted);font-size:15px}
+  .price{font-weight:700}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  h2{font-size:24px;letter-spacing:-.02em;margin:0 0 12px}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+  @media (max-width:640px){.hero h1{font-size:30px}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap">
+  <span class="brand">Snowline Supply</span>
+  <nav><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Winter gear, picked by people who ride.</h1>
+    <p>Snowboards, bindings and cold-weather accessories. Free shipping on orders over $120, 30-day returns on unused gear.</p>
+    <a class="btn" href="#shop">Browse the shop</a>
+  </div>
+
+  <div class="grid" id="shop">
+    <div class="card"><h3>Oxygen Snowboard</h3><p>All-mountain twin, 152–160 cm.</p><div class="price">$429</div></div>
+    <div class="card"><h3>Hydrogen Snowboard</h3><p>Directional camber for groomers.</p><div class="price">$489</div></div>
+    <div class="card"><h3>Alpine Bindings</h3><p>Medium flex, tool-free adjustment.</p><div class="price">$179</div></div>
+    <div class="card"><h3>Thermal Gloves</h3><p>Waterproof shell, merino lining.</p><div class="price">$59</div></div>
+  </div>
+
+  <section id="about">
+    <h2>About us</h2>
+    <p>Snowline Supply is an online retailer of snowboarding and winter sports equipment. We stock a small, curated range rather than a full catalogue, and every product is one our team has ridden. Orders ship from our warehouse within two business days.</p>
+  </section>
+
+  <section id="shipping">
+    <h2>Shipping &amp; returns</h2>
+    <p>Standard shipping is free on orders over $120 and takes 3–5 business days. Unused gear in original packaging can be returned within 30 days for a full refund. Boards that have been ridden are covered by the manufacturer's warranty only.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Questions about an order or a product? Email <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a> and we reply within one business day.</p>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  © <span id="y"></span> REPLACE_WITH_YOUR_LEGAL_COMPANY_NAME · <a href="#shipping">Shipping &amp; returns</a> · <a href="#contact">Contact</a>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
